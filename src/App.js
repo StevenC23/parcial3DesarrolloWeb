@@ -1,10 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
+import{
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Login from "./components/Login.jsx";
+import Home from "./components/Home.jsx";
+
 
 function App() {
   return (
-    <div className="container">
-      <h1>Todo ok ..</h1>
-    </div>
+    <Router>
+      <Fragment>
+        <Routes>
+          <Route exact path='/' element={<Login/>}/>
+          <Route exact path='/Home' element={<Home/>}/>
+        </Routes>
+      </Fragment>
+    </Router>
   );
 }
 
