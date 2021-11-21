@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import{
+import {
   BrowserRouter as Router,
   Routes,
   Route,
@@ -7,18 +7,21 @@ import{
 } from "react-router-dom";
 import Login from "./components/Login.jsx";
 import Home from "./components/Home.jsx";
+import AuthContextProvider from './contexts/AuthContext';
 
 
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Routes>
-          <Route exact path='/' element={<Login/>}/>
-          <Route exact path='/Home' element={<Home/>}/>
-        </Routes>
-      </Fragment>
-    </Router>
+    <AuthContextProvider>
+      <Router>
+        <Fragment>
+          <Routes>
+            <Route exact path='/' element={<Login />} />
+            <Route exact path='/Home' element={<Home />} />
+          </Routes>
+        </Fragment>
+      </Router>
+    </AuthContextProvider>
   );
 }
 
