@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../utils/imgs/Logo-Instagram.jpg'; // with import
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faSearch, faCommentDots, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     return (
@@ -8,6 +10,7 @@ const Home = () => {
 
                 <div style={styles.containerLogo}>
                     <img src={logo} width="100" height="100%" />
+                    <FontAwesomeIcon icon={faHome} />
                 </div>
 
                 <div style={styles.containerBusqueda}>
