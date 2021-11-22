@@ -9,7 +9,6 @@ import Login from "./components/Login.jsx";
 import Home from "./components/Home.jsx";
 import AuthContextProvider from './contexts/AuthContext';
 
-
 function App() {
   return (
     <AuthContextProvider>
