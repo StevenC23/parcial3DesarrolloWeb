@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
-} from "react-router-dom";
+  Route
+}
+from "react-router-dom";
 import Login from "./components/Login.jsx";
 import Home from "./components/Home.jsx";
 import AuthContextProvider from './contexts/AuthContext';
