@@ -1,26 +1,59 @@
 import React from 'react';
-import logo from '../utils/imgs/Logo-Instagram.jpg'; // with import
+import casa from '../utils/imgs/Casa.PNG';
+import brujula from '../utils/imgs/Brujula.PNG';
+import mesenger from '../utils/imgs/Mesenger.PNG';
+import corazon from '../utils/imgs/Corazon.PNG';
+// import perfil from '../utils/imgs/Logo-Instagram.jpg';
+import logo from '../utils/imgs/Logo-Instagram.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faCommentDots, faUser } from '@fortawesome/free-solid-svg-icons';
+import Publicacion from './Publicacion';
+import User from './User';
+import ScrollBar from './ScrollBar';
 
 const Home = () => {
     return (
-        <div style={styles.containerPrincipal}>
-            <div style={styles.container}>
+        <div style={styles.containerFull}>
 
-                <div style={styles.containerLogo}>
-                    <img src={logo} width="100" height="100%" />
-                    <FontAwesomeIcon icon={faHome} />
+            <div style={styles.containerPrincipal}>
+                <div style={styles.container}>
+
+                    <div style={styles.containerLogo}>
+                        <img src={logo} width="100" height="100%" />
+                    </div>
+
+                    <div style={styles.containerBusqueda}>
+                        <input type="text" style={styles.busqueda} placeholder="Buscar"/>
+                    </div>
+
+                    <div style={styles.containerOpciones}>
+                        <img src={casa} width="30" height="30" style={styles.icon}/>
+                        <img src={mesenger} width="35" height="35" style={styles.icon}/>
+                        <img src={brujula} width="30" height="30" style={styles.icon}/>
+                        <img src={corazon} width="30" height="30" style={styles.icon}/>
+                        <img src={corazon} width="30" height="30" style={styles.icon}/>
+                    </div>
+
                 </div>
+            </div>
+            <div style={styles.containerSecundario}>
+                <div style={styles.containerr}>
+                    
+                    <div style={styles.publicaciones}>
+                        <ScrollBar/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                        <Publicacion img='https://picsum.photos/400/650'/>
+                    </div>
+                    <div>
 
-                <div style={styles.containerBusqueda}>
-                    <input type="text" style={styles.busqueda} placeholder="Buscar"/>
+                    </div>
                 </div>
-
-                <div style={styles.containerOpciones}>
-                    <span>Hi 2</span>
-                </div>
-
             </div>
         </div>
     );
@@ -53,9 +86,15 @@ const styles = {
         flexDirection: 'row',
     },
     containerOpciones:{
-
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-
+    icon:{
+        marginLeft: '15px',
+        
+    },
     logo:{
 
     },
@@ -66,9 +105,32 @@ const styles = {
         background: 'rgba(var(--b3f,250,250,250),1)',
         width: '200px',
     },
-    opciones:{
 
-    }
+
+
+    /////////
+
+    containerSecundario:{
+        width:'100%',
+        height: '100%',
+        // background: 'red',
+        justifyContent: 'center',
+        display:'flex'
+    },
+
+    containerr:{
+        width: '100%',
+        maxWidth: '935px',
+        // justifyContent: 'center',
+        display: 'flex',
+        flexDirection: 'row',
+        // background:'blue',
+    },
+
+    publicaciones:{
+        // background: 'green',
+        width: '600px'
+    },
 }
 
 export default Home;
