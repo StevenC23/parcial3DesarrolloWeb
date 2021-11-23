@@ -8,6 +8,8 @@ import logo from '../utils/imgs/Logo-Instagram.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faCommentDots, faUser } from '@fortawesome/free-solid-svg-icons';
 import Publicacion from './Publicacion';
+import User from './User';
+import ScrollBar from './ScrollBar';
 
 const Home = () => {
     return (
@@ -36,7 +38,9 @@ const Home = () => {
             </div>
             <div style={styles.containerSecundario}>
                 <div style={styles.containerr}>
+                    
                     <div style={styles.publicaciones}>
+                        <ScrollBar/>
                         <Publicacion img='https://picsum.photos/400/650'/>
                         <Publicacion img='https://picsum.photos/400/650'/>
                         <Publicacion img='https://picsum.photos/400/650'/>
@@ -126,7 +130,7 @@ const styles = {
     publicaciones:{
         // background: 'green',
         width: '600px'
-    }
+    },
 }
 
 export default Home;
