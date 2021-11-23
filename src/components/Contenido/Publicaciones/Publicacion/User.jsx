@@ -1,33 +1,32 @@
 import React from 'react';
-import hit from '../utils/imgs/hit.PNG';
+import hit from '../../../../utils/imgs/hit.PNG';
 
-const UserScroll = () => {
+const User = () => {
     return (
-
         <div style={styles.multiColor}>
             <div style={styles.fondo}>
-                <img src={hit} width="60" height="60" style={styles.img}/>
+                <img src={hit} width="40" height="40" style={styles.img} alt="" />
             </div>
         </div>
-
     );
 };
 
 const styles = {
 
-    multiColor:{
+    multiColor: {
         background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(236,252,69,1) 100%)',
-        width: '70px',
-        height: '70px',
+        width: '50px',
+        height: '50px',
         borderRadius: '100%',
+        cursor: 'pointer'
         // justifyContent: 'center',
         // alignItems: 'center',
         // alignContent: 'center'
     },
-    fondo:{
+    fondo: {
         background: 'white',
-        width: '66px',
-        height: '66px',
+        width: '46px',
+        height: '46px',
         borderRadius: '100%',
         margin: 'auto',
         marginTop: '2px',
@@ -35,8 +34,11 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
     },
-    img:{
+    img: {
         borderRadius: '100%'
     }
 }
-export default UserScroll;
+
+
+
+export default User;

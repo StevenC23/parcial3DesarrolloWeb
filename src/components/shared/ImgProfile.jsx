@@ -1,31 +1,26 @@
 import React from 'react';
-import hit from '../utils/imgs/hit.PNG';
+import hit from '../../utils/imgs/hit.PNG';
 
-const User = () => {
+const ImgProfile = (props) => {
     return (
-
-        <div style={styles.multiColor}>
-            <div style={styles.fondo}>
-                <img src={hit} width="40" height="40" style={styles.img}/>
-            </div>
+        <div >
+            <img src={hit} width={props.width} height={props.height} style={styles.img} alt="" />
         </div>
-
     );
 };
 
 const styles = {
 
-    multiColor:{
+    multiColor: {
         background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(236,252,69,1) 100%)',
         width: '50px',
         height: '50px',
         borderRadius: '100%',
-        cursor: 'pointer'
         // justifyContent: 'center',
         // alignItems: 'center',
         // alignContent: 'center'
     },
-    fondo:{
+    fondo: {
         background: 'white',
         width: '46px',
         height: '46px',
@@ -36,11 +31,11 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
     },
-    img:{
+    img: {
         borderRadius: '100%'
     }
 }
 
 
 
-export default User;
+export default ImgProfile;

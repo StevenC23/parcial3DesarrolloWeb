@@ -1,48 +1,47 @@
 import React from 'react';
-import User from './User';
-import UserScroll from './UserScroll';
+import UserScroll from '../../shared/UserScroll';
 
-const ScrollBar = () => {
+const Historias = () => {
     return (
         <div style={styles.scrollmenu} className='scroll'>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
             <div style={styles.userScroll}>
-                <UserScroll/>
+                <UserScroll />
                 <span>Hitler</span>
             </div>
         </div>
@@ -50,11 +49,10 @@ const ScrollBar = () => {
 };
 
 const styles = {
-//scrollbar
     scrollmenu: {
         marginTop: '30px',
         // height: '100px',
-        width:'99%',
+        width: '99%',
         backgroundColor: 'white',
         overflow: 'auto',
         whiteSpace: 'nowrap',
@@ -63,15 +61,15 @@ const styles = {
         border: '1px solid #cfcece',
         paddingBottom: '0px',
         marginBottom: '0px',
-        cursor:'pointer',
+        cursor: 'pointer',
     },
-    userScroll:{
-        display:'flex',
+    userScroll: {
+        display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding:'10px'
+        padding: '10px'
     }
 }
 
-export default ScrollBar;
+export default Historias;
