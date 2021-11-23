@@ -20,7 +20,7 @@ Logo de Instagram.
 
 Barra de busqueda.
 
-- Componente Opciones.
+- Componente Opciones:
 
 Menú de opciones.
 
