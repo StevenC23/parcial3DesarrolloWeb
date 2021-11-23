@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleButton from '../components/shared/GoogleButton';
 import { useAuth } from '../contexts/AuthContext'
 import inicioInstagram from '../utils/imgs/inicioInstagram.PNG';
@@ -11,10 +11,10 @@ export default function Loginpage() {
     const { logout, currentUser } = useAuth();
 
     const location = useLocation();
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     function handleRedirectToOrBack() {
-        history.push(ROUTES.HOME);
+        return <Link to='/Home' />
     }
 
     const styles = {
@@ -25,7 +25,7 @@ export default function Loginpage() {
             alignItems: 'center',
             flexDirection: 'column',
             margin: '10px',
-            border: '1px solid rgba(128, 128, 128, 0.3)',
+            border: '1px solid rgba(128, 128, 128, 0.5)',
             borderRadius: '5px'
         },
         button: {
@@ -52,14 +52,17 @@ export default function Loginpage() {
                             .catch(e => console.log(e.message))
                     } />
                     {currentUser && (
-                        <button
-                            onClick={async e => {
-                                e.preventDefault()
-                                await logout()
-                            }}
-                        >
-                            Cerrar sesión
-                        </button>
+                        <div styles={{ display: "flex", flexDirection: "column", height: "50px", justifyContent: "space-around", alignItems: "center" }}>
+                            <button
+                                onClick={async e => {
+                                    e.preventDefault()
+                                    await logout()
+                                }}
+                            >
+                                Cerrar sesión
+                            </button>
+                            <Link to={ROUTES.HOME}>Ir al home</Link>
+                        </div>
                     )}
 
                 </div>
