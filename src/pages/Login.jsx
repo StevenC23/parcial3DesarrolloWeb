@@ -24,7 +24,7 @@ export default function Loginpage() {
             flexDirection:'column',
             // background: 'red',
             margin: '10px',
-            border: '1px solid rgba(128, 128, 128, 0.5)',
+            border: '1px solid rgba(128, 128, 128, 0.3)',
             borderRadius: '5px'
         },
         button:{
