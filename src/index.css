@@ -14,13 +14,38 @@ code {
     monospace;
 }
 
+.scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
 
-/* /////
-.{
-  background-color: ;
-  height: ;
-  width: ;
-  justify-content: center;
-  justify-content: space-between;
-  border: #e6e6e6
-} */
+.publicaciones::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.scroll{
+  /* position: fixed; */
+}
+
+.nombrePublicacion:hover{
+  text-decoration: underline
+}
+
+.nombrePublicacion{
+  cursor: pointer;
+}
+
+.nombreLink:hover{
+  text-decoration: underline
+}
+
+.nombreUno:hover{ 
+  text-decoration: underline
+}
+
+.nombreDos:hover{
+  text-decoration: underline  
+}
+
+.nombreTres:hover{
+  text-decoration: underline 
+}

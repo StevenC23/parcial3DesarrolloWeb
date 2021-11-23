@@ -1,13 +1,11 @@
 import React from 'react';
 import hit from '../utils/imgs/hit.PNG';
 
-const User = () => {
+const UserSugerencias = (props) => {
     return (
 
-        <div style={styles.multiColor}>
-            <div style={styles.fondo}>
-                <img src={hit} width="40" height="40" style={styles.img}/>
-            </div>
+        <div >
+            <img src={hit} width={props.width} height={props.height} style={styles.img}/>
         </div>
 
     );
@@ -20,7 +18,6 @@ const styles = {
         width: '50px',
         height: '50px',
         borderRadius: '100%',
-        cursor: 'pointer'
         // justifyContent: 'center',
         // alignItems: 'center',
         // alignContent: 'center'
@@ -43,4 +40,4 @@ const styles = {
 
 
 
-export default User;
+export default UserSugerencias;
