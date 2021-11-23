@@ -16,6 +16,7 @@ export default function Loginpage() {
         history.replace(location.state?.from ?? '/profile')
     }
 
+    
     return (
         <div>
             <Card maxW='md' mx='auto' mt={4}>
