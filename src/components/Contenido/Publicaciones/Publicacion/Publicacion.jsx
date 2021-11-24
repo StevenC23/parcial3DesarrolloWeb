@@ -27,12 +27,12 @@ const Publicacion = (props) => {
             <div style={styles.footerPublicacion}>
                 <div style={styles.containerOpciones}>
                     <div>
-                        <img src={corazon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" />
-                        <img src={comentario} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" />
-                        <img src={compartir} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" />
+                        <img src={corazon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
+                        <img src={comentario} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
+                        <img src={compartir} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
                     </div>
                     <div>
-                        <img src={guardar} width="30" height="30" style={{ cursor: 'pointer' }} alt="" />
+                        <img src={guardar} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
                     </div>
                 </div>
                 <br />
@@ -48,7 +48,7 @@ const Publicacion = (props) => {
             <div style={styles.comentario}>
                 <img src={emoticon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" />
                 <input type="text" placeholder='Agrega un comentario...' style={{ width: '100%', border: '0', outline: 'none', marginLeft: '5px', marginRight: '5px' }} />
-                <span style={{ color: 'rgba(83, 83, 255, 0.5)' }}>Publicar</span>
+                <span style={{ color: 'rgba(83, 83, 255, 0.5)',cursor:'pointer' }}>Publicar</span>
             </div>
         </div>
     );

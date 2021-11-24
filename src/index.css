@@ -41,3 +41,7 @@ text-decoration: underline
 .nombreTres:hover{
 text-decoration: underline 
 }
+
+.iconoPublicacion:hover{
+  opacity: 0.5;
+}
