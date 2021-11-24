@@ -12,13 +12,14 @@ import UseMediaQuery from './components/shared/UseMediaQuery';
 
 function App() {
   const isDesktop = UseMediaQuery('(min-width: 1000px)');
+  const isDesktopLogin = UseMediaQuery('(min-width: 876px)');
 
   return (
     <AuthContextProvider>
       <Router>
         <Fragment>
           <Routes>
-            <Route exact path='/' element={<Login />} />
+            <Route exact path='/' element={<Login isDesktop={isDesktopLogin} />} />
             <Route exact path='/Home' element={<Home isDesktop={isDesktop} />} />
           </Routes>
         </Fragment>
