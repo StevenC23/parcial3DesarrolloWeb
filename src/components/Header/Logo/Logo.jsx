@@ -3,16 +3,10 @@ import logo from '../../../utils/imgs/Logo-Instagram.jpg';
 
 const Logo = () => {
     return (
-        <div style={styles.containerLogo}>
+        <div style={{cursor:'pointer'}}>
             <img src={logo} width="100" height="100%" alt="" />
         </div>
     );
 };
-
-const styles = {
-    containerLogo: {
-        cursor: 'pointer'
-    }
-}
 
 export default Logo;

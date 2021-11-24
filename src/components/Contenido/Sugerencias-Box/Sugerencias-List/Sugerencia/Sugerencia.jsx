@@ -8,7 +8,9 @@ const Sugerencia = (props) => {
                 <ImgProfile width='40px' height='40px' />
             </div>
             <div style={styles.nombre}>
-                <span style={styles.nombreLink} className='nombreLink'>{props.nombre}</span>
+                <div style={styles.nombreLink} >
+                    <span style={{cursor:'pointer'}} className='nombreLink'>{props.nombre}</span>
+                </div>
                 <span style={{ fontSize: '12px', color: 'grey' }}>Nuevo en instagram</span>
             </div>
             <div style={{ color: 'rgb(57, 157, 238)', cursor: 'pointer', }}><strong>Seguir</strong></div>
@@ -32,12 +34,6 @@ const styles = {
         marginLeft: '10px',
         display: 'flex',
         flexDirection: 'column'
-    },
-    nombreLink: {
-        display: 'flex',
-        cursor: 'pointer',
-        border: '1px solid white',
-        // borderBottom: '1px solid black'
     }
 }
 

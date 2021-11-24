@@ -1,20 +1,19 @@
 import React from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import GoogleButton from '../components/shared/GoogleButton';
 import { useAuth } from '../contexts/AuthContext'
 import inicioInstagram from '../utils/imgs/inicioInstagram.PNG';
 import logoInstagram from '../utils/imgs/Logo-Instagram.jpg';
-import * as ROUTES from '../constants/routes';
 
 export default function Loginpage() {
-    const { signInWithGoogle, login } = useAuth();
-    const { logout, currentUser } = useAuth();
 
-    const location = useLocation();
     const navigate = useNavigate();
 
+    const { signInWithGoogle} = useAuth();
+    const { logout, currentUser } = useAuth();
+
     function handleRedirectToOrBack() {
-        return <Link to='/Home' />
+        navigate('/home');
     }
 
     const styles = {
@@ -47,7 +46,6 @@ export default function Loginpage() {
                         signInWithGoogle()
                             .then(user => {
                                 handleRedirectToOrBack();
-                                console.log(user);
                             })
                             .catch(e => console.log(e.message))
                     } />
@@ -61,7 +59,6 @@ export default function Loginpage() {
                             >
                                 Cerrar sesión
                             </button>
-                            <Link to={ROUTES.HOME}>Ir al home</Link>
                         </div>
                     )}
 

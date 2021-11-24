@@ -51,7 +51,6 @@ const Historias = () => {
 const styles = {
     scrollmenu: {
         marginTop: '30px',
-        // height: '100px',
         width: '99%',
         backgroundColor: 'white',
         overflow: 'auto',
@@ -59,16 +58,15 @@ const styles = {
         display: 'flex',
         alignItems: 'center',
         border: '1px solid #cfcece',
-        paddingBottom: '0px',
-        marginBottom: '0px',
-        cursor: 'pointer',
+        
     },
     userScroll: {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '10px'
+        margin: '10px',
+        cursor: 'pointer',
     }
 }
 

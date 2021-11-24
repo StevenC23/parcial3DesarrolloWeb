@@ -5,7 +5,7 @@ const UserScroll = () => {
     return (
         <div style={styles.multiColor}>
             <div style={styles.fondo}>
-                <img src={hit} width="60" height="60" style={styles.img} alt="" />
+                <img src={hit} width="60" height="60" style={{borderRadius:'100%'}} alt="" />
             </div>
         </div>
     );
@@ -17,9 +17,7 @@ const styles = {
         width: '70px',
         height: '70px',
         borderRadius: '100%',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // alignContent: 'center'
+        
     },
     fondo: {
         background: 'white',
@@ -31,9 +29,6 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    },
-    img: {
-        borderRadius: '100%'
     }
 }
 export default UserScroll;

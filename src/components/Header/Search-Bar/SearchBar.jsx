@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const SearchBar = () => {
     return (
-        <div style={styles.containerBusqueda}>
+        <div style={{display: 'flex',flexDirection: 'row'}}>
             <input type="text" style={styles.busqueda} placeholder="Buscar" />
             <FontAwesomeIcon icon={faSearch} style={styles.iconSearch} />
         </div>
@@ -12,10 +12,7 @@ const SearchBar = () => {
 };
 
 const styles = {
-    containerBusqueda: {
-        display: 'flex',
-        flexDirection: 'row',
-    },
+
     busqueda: {
         margin: '12px 0px',
         borderRadius: '3px',

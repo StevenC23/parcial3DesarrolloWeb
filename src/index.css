@@ -15,37 +15,29 @@ code {
 }
 
 .scroll::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-
-.publicaciones::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
-.scroll{
-  /* position: fixed; */
+.publicaciones::-webkit-scrollbar {
+-webkit-appearance: none;
 }
 
 .nombrePublicacion:hover{
-  text-decoration: underline
-}
-
-.nombrePublicacion{
-  cursor: pointer;
+text-decoration: underline
 }
 
 .nombreLink:hover{
-  text-decoration: underline
+text-decoration: underline
 }
 
 .nombreUno:hover{ 
-  text-decoration: underline
+text-decoration: underline
 }
 
 .nombreDos:hover{
-  text-decoration: underline  
+text-decoration: underline  
 }
 
 .nombreTres:hover{
-  text-decoration: underline 
+text-decoration: underline 
 }

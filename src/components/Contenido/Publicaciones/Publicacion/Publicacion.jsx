@@ -111,7 +111,8 @@ const styles = {
 
     },
     nombre: {
-        marginLeft: '10px'
+        marginLeft: '10px',
+        cursor: 'pointer',
     }
 
 
