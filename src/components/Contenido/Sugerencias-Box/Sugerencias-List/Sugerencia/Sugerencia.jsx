@@ -5,7 +5,7 @@ const Sugerencia = (props) => {
     return (
         <div style={styles.sugerencia}>
             <div style={{ display: 'flex', cursor: 'pointer' }}>
-                <ImgProfile width='40px' height='40px' />
+                <ImgProfile width='40px' height='40px' image={props.image} />
             </div>
             <div style={styles.nombre}>
                 <div style={styles.nombreLink} >

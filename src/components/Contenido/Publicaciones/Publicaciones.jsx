@@ -7,14 +7,14 @@ const Publicaciones = ({ isDesktop }) => {
         <div style={isDesktop ? styles.publicaciones : styles.publicacionesTablet} className='publicaciones'>
             <Historias />
             <div style={styles.publicacioness}>
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
-                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/399/399' />
+                <Publicacion img='https://picsum.photos/399/398' />
+                <Publicacion img='https://picsum.photos/398/398' />
+                <Publicacion img='https://picsum.photos/398/399' />
+                <Publicacion img='https://picsum.photos/397/398' />
+                <Publicacion img='https://picsum.photos/399/397' />
+                <Publicacion img='https://picsum.photos/397/399' />
+                <Publicacion img='https://picsum.photos/398/397' />
             </div>
         </div>
     );

@@ -1,32 +1,28 @@
 import React from 'react';
-import hit from '../../../../utils/imgs/hit.PNG';
+import UserPic from '../../../../utils/imgs/vic.jpg';
 
 const User = () => {
     return (
         <div style={styles.multiColor}>
             <div style={styles.fondo}>
-                <img src={hit} width="40" height="40" style={styles.img} alt="" />
+                <img src={UserPic} width="30" height="30" style={styles.img} alt="" />
             </div>
         </div>
     );
 };
 
 const styles = {
-
     multiColor: {
         background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(236,252,69,1) 100%)',
-        width: '50px',
-        height: '50px',
+        width: '40px',
+        height: '40px',
         borderRadius: '100%',
         cursor: 'pointer'
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // alignContent: 'center'
     },
     fondo: {
         background: 'white',
-        width: '46px',
-        height: '46px',
+        width: '36px',
+        height: '36px',
         borderRadius: '100%',
         margin: 'auto',
         marginTop: '2px',

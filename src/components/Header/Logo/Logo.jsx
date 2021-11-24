@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from '../../../utils/imgs/Logo-Instagram.jpg';
+import logo from '../../../utils/imgs/logo_identico.png';
 
-const Logo = () => {
+const Logo = ({ isDesktop }) => {
     return (
-        <div style={{cursor:'pointer',paddingLeft: '10px'}}>
-            <img src={logo} width="100" height="100%" alt="" />
+        <div style={{ ...styles.logo, paddingLeft: !isDesktop ? '20px' : '0px' }}>
+            <img src={logo} alt="" />
         </div>
     );
+};
+
+const styles = {
+    logo: {
+        cursor: 'pointer',
+        paddingTop: '15px'
+    }
 };
 
 export default Logo;

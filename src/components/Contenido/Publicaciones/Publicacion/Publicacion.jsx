@@ -14,10 +14,10 @@ const Publicacion = (props) => {
             <div style={styles.headerPublicacion}>
                 <div style={styles.headerL}>
                     <User width='40' height='40' />
-                    <div style={styles.nombre} className='nombrePublicacion'>Adolf Hitler</div>
+                    <div style={styles.nombre} className='nombrePublicacion'>victoria.gomez96</div>
                 </div>
                 <div style={styles.headerR}>
-                    <FontAwesomeIcon icon={faEllipsisH} />
+                    <FontAwesomeIcon icon={faEllipsisH} style={{ fontSize: '14px' }} />
                 </div>
             </div>
             <div style={styles.imgPublicacion}>
@@ -27,28 +27,27 @@ const Publicacion = (props) => {
             <div style={styles.footerPublicacion}>
                 <div style={styles.containerOpciones}>
                     <div>
-                        <img src={corazon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
-                        <img src={comentario} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
-                        <img src={compartir} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
+                        <img src={corazon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion' />
+                        <img src={comentario} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion' />
+                        <img src={compartir} width="30" height="30" style={{ marginLeft: '10px', cursor: 'pointer' }} alt="" className='iconoPublicacion' />
                     </div>
                     <div>
-                        <img src={guardar} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion'/>
+                        <img src={guardar} width="30" height="30" style={{ cursor: 'pointer' }} alt="" className='iconoPublicacion' />
                     </div>
                 </div>
-                <span style={{ fontWeight: 'bold', paddingTop: '10px', paddingBottom: '10px' }}>1,012 likes</span>
-                <span><strong style={{ cursor: 'pointer' }} className='nombreUno'>Adolf Hitler</strong> Nueva fotito</span>
-                <span style={{ color: 'grey', cursor: 'pointer' }}>Ver los 24 comentarios</span>
-                <span><strong style={{ cursor: 'pointer' }} className='nombreDos'>Rudolf Hess</strong> Goedemorgen baas, je ziet er erg mooi uit</span>
-                <span><strong style={{ cursor: 'pointer' }} className='nombreTres'>Hermann Göring</strong> We moeten Amerika veroveren</span>
-                <br />
-                <span style={{ color: 'grey', cursor: 'pointer' }}>Hace 13 horas</span>
+                <span style={{ fontWeight: 'bold', paddingTop: '10px', paddingBottom: '10px', color: '#343434', fontSize: '13px' }}>1,012 Me gusta</span>
+                <span><strong style={{ cursor: 'pointer', color: '#343434', fontSize: '13px' }} className='nombreUno'>victoria.gomez96</strong> Nueva fotito</span>
+                <span style={{ color: 'grey', cursor: 'pointer', fontSize: '13px', paddingTop: '5px', paddingBottom: '5px' }}>Ver los 24 comentarios</span>
+                <span><strong style={{ cursor: 'pointer', color: '#343434', fontSize: '13px' }} className='nombreDos'>Rudolf Hess</strong> Goedemorgen baas, je ziet er erg mooi uit</span>
+                <span><strong style={{ cursor: 'pointer', color: '#343434', fontSize: '13px' }} className='nombreTres'>Hermann Göring</strong> We moeten Amerika veroveren</span>
+                <span style={{ color: 'grey', cursor: 'pointer', fontSize: '13px', paddingTop: '5px', paddingBottom: '10px' }}>Hace 13 horas</span>
 
 
             </div>
             <div style={styles.comentario}>
                 <img src={emoticon} width="30" height="30" style={{ cursor: 'pointer' }} alt="" />
                 <input type="text" placeholder='Agrega un comentario...' style={{ width: '100%', border: '0', outline: 'none', marginLeft: '5px', marginRight: '5px' }} />
-                <span style={{ color: 'rgba(83, 83, 255, 0.5)',cursor:'pointer' }}>Publicar</span>
+                <span style={{ color: 'rgba(83, 83, 255, 0.5)', cursor: 'pointer' }}>Publicar</span>
             </div>
         </div>
     );
@@ -60,7 +59,6 @@ const styles = {
         marginBottom: '30px',
         marginTop: '30px',
         background: 'white'
-
     },
     imgPublicacion: {
         width: '100%',
@@ -69,7 +67,7 @@ const styles = {
     headerPublicacion: {
         display: 'flex',
         flexDirection: 'row',
-        height: '40px',
+        height: '25px',
         backgroundColor: 'white',
         justifyContent: 'space-between',
         padding: '20px',
@@ -113,9 +111,10 @@ const styles = {
     nombre: {
         marginLeft: '10px',
         cursor: 'pointer',
+        fontSize: '13px',
+        fontWeight: 'bold',
+        color: '#343434'
     }
-
-
 
 }
 export default Publicacion;

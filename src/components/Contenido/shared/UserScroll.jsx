@@ -1,11 +1,10 @@
 import React from 'react';
-import hit from '../../../utils/imgs/hit.PNG';
 
-const UserScroll = () => {
+const UserScroll = ({ image }) => {
     return (
         <div style={styles.multiColor}>
             <div style={styles.fondo}>
-                <img src={hit} width="60" height="60" style={{borderRadius:'100%'}} alt="" />
+                <img src={image} width="60" height="60" style={{ borderRadius: '100%' }} alt="" />
             </div>
         </div>
     );
@@ -17,7 +16,7 @@ const styles = {
         width: '70px',
         height: '70px',
         borderRadius: '100%',
-        
+
     },
     fondo: {
         background: 'white',

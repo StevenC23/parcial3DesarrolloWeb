@@ -2,7 +2,7 @@ import React from 'react';
 
 const SugerenciasFooter = () => {
     return (
-        <div>
+        <div style={{ paddingTop: '25px' }}>
             <div style={styles.data}>
                 Informacion · Ayuda · Prensa · API · Empleo · Privacidad · Condiciones · Ubicacion · Cuentas destacadas · Hashtags · Idioma
             </div>

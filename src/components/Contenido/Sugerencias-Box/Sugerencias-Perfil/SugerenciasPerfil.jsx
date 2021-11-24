@@ -1,16 +1,17 @@
 import React from 'react';
 import UserScroll from '../../shared/UserScroll';
+import UserPic from '../../../../utils/imgs/vic.jpg';
 
 const Perfil = () => {
     return (
         <div style={styles.perfil}>
             <div style={{ display: 'Flex', flexDirection: 'row' }}>
                 <div style={styles.userScroll}>
-                    <UserScroll />
+                    <UserScroll image={UserPic} />
                 </div>
                 <div style={styles.cuenta}>
-                    <span style={{ fontSize: '12px', cursor: 'pointer' }}>hitler.vivaAlemania.26</span>
-                    <span style={{ fontSize: '12px', color: 'grey' }}>Adolf Camilo Hitler</span>
+                    <span style={{ fontSize: '12px', cursor: 'pointer', fontWeight: 'bold', color: '#343434' }}>victoria.gomez96</span>
+                    <span style={{ fontSize: '12px', color: 'grey' }}>Victoria Gomez</span>
                 </div>
             </div>
             <span style={{ color: 'rgb(57, 157, 238)', cursor: 'pointer' }}><strong>Cambiar</strong></span>

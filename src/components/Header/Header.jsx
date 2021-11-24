@@ -7,9 +7,9 @@ const Header = ({ isDesktop }) => {
     return (
         <div style={isDesktop ? styles.containerPrincipal : styles.containerPrincipalTablet}>
             <div style={styles.container}>
-                <Logo />
+                <Logo isDesktop={isDesktop} />
                 <SearchBar />
-                <Opciones />
+                <Opciones isDesktop={isDesktop} />
             </div>
         </div>
     );

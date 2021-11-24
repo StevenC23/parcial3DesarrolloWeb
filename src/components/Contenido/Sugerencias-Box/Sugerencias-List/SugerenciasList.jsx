@@ -9,11 +9,11 @@ const SugerenciasList = () => {
                 <span style={{ cursor: 'pointer' }}>Ver todo</span>
             </div>
             <div style={{ marginTop: '20px' }}>
-                <Sugerencia nombre={'Daniel Ceron'} />
-                <Sugerencia nombre={'Camilo Cesto'} />
-                <Sugerencia nombre={'Harry Styles'} />
-                <Sugerencia nombre={'Dwayine Jhonson'} />
-                <Sugerencia nombre={'Megan fox'} />
+                <Sugerencia nombre={'Daniel Ceron'} image='https://picsum.photos/500/500' />
+                <Sugerencia nombre={'Camilo Cesto'} image='https://picsum.photos/501/500' />
+                <Sugerencia nombre={'Harry Styles'} image='https://picsum.photos/501/499' />
+                <Sugerencia nombre={'Dwayine Jhonson'} image='https://picsum.photos/502/502' />
+                <Sugerencia nombre={'Megan fox'} image='https://picsum.photos/503/503' />
             </div>
         </div>
     );
