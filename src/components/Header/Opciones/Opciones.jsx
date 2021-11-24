@@ -25,6 +25,7 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        paddingRight: '10px'
     },
     icon: {
         marginLeft: '15px',

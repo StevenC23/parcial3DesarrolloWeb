@@ -32,7 +32,7 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'center',
         borderBottom: 'solid 1px #e6e6e6',
-        background: 'white'
+        background: 'white',
     },
     container: {
         width: '100%',
