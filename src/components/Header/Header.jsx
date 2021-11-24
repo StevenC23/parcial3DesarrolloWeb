@@ -3,9 +3,9 @@ import Logo from './Logo/Logo';
 import SearchBar from './Search-Bar/SearchBar';
 import Opciones from './Opciones/Opciones';
 
-const Header = () => {
+const Header = ({ isDesktop }) => {
     return (
-        <div style={styles.containerPrincipal}>
+        <div style={isDesktop ? styles.containerPrincipal : styles.containerPrincipalTablet}>
             <div style={styles.container}>
                 <Logo />
                 <SearchBar />
@@ -17,6 +17,15 @@ const Header = () => {
 
 const styles = {
     containerPrincipal: {
+        height: '50px',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        borderBottom: 'solid 1px #e6e6e6',
+        background: 'white'
+    },
+    containerPrincipalTablet: {
         height: '50px',
         width: '100%',
         display: 'flex',

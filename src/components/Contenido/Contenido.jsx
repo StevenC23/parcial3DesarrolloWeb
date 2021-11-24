@@ -5,8 +5,8 @@ import Publicaciones from './Publicaciones/Publicaciones';
 const Contenido = ({ isDesktop }) => {
     return (
         <div style={styles.containerSecundario}>
-            <div style={styles.containerr}>
-                <Publicaciones />
+            <div style={isDesktop ? styles.containerr : styles.containerrTablet}>
+                <Publicaciones isDesktop={isDesktop} />
                 <SugerenciasBox isDesktop={isDesktop} />
             </div>
         </div>
@@ -25,6 +25,13 @@ const styles = {
         maxWidth: '935px',
         display: 'flex',
         flexDirection: 'row',
+    },
+    containerrTablet: {
+        width: '100%',
+        maxWidth: '935px',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center'
     }
 }
 

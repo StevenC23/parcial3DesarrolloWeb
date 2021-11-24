@@ -21,7 +21,7 @@ const Publicacion = (props) => {
                 </div>
             </div>
             <div style={styles.imgPublicacion}>
-                <img src={props.img} width="100%" height="500px" alt="" />
+                <img src={props.img} width="100%" alt="" />
             </div>
 
             <div style={styles.footerPublicacion}>
@@ -35,7 +35,7 @@ const Publicacion = (props) => {
                         <img src={guardar} width="30" height="30" style={{ cursor: 'pointer' }} alt="" />
                     </div>
                 </div>
-                <br />
+                <span style={{ fontWeight: 'bold', paddingTop: '10px', paddingBottom: '10px' }}>1,012 likes</span>
                 <span><strong style={{ cursor: 'pointer' }} className='nombreUno'>Adolf Hitler</strong> Nueva fotito</span>
                 <span style={{ color: 'grey', cursor: 'pointer' }}>Ver los 24 comentarios</span>
                 <span><strong style={{ cursor: 'pointer' }} className='nombreDos'>Rudolf Hess</strong> Goedemorgen baas, je ziet er erg mooi uit</span>

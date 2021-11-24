@@ -2,19 +2,19 @@ import React from 'react';
 import Publicacion from './Publicacion/Publicacion';
 import Historias from './Historias/Historias';
 
-const Publicaciones = () => {
+const Publicaciones = ({ isDesktop }) => {
     return (
-        <div style={styles.publicaciones} className='publicaciones'>
+        <div style={isDesktop ? styles.publicaciones : styles.publicacionesTablet} className='publicaciones'>
             <Historias />
             <div style={styles.publicacioness}>
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
-                <Publicacion img='https://picsum.photos/400/650' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
+                <Publicacion img='https://picsum.photos/400/400' />
             </div>
         </div>
     );
@@ -23,6 +23,13 @@ const Publicaciones = () => {
 const styles = {
     publicaciones: {
         minWidth: '600px',
+        height: '100%',
+        overflow: 'auto',
+        whiteSpace: 'nowrap',
+    },
+    publicacionesTablet: {
+        width: '690px',
+        minWidth: '690px',
         height: '100%',
         overflow: 'auto',
         whiteSpace: 'nowrap',

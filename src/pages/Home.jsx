@@ -5,7 +5,7 @@ import Contenido from '../components/Contenido/Contenido';
 const Home = ({ isDesktop }) => {
     return (
         <div style={styles.containerFull}>
-            <Header />
+            <Header isDesktop={isDesktop} />
             <Contenido isDesktop={isDesktop} />
         </div>
     );
